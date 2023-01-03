@@ -7,7 +7,7 @@
 .see-on-desktop {
     font-weight: 800;
     color: $d-blue;
-    @media(max-width: $desktop-breakpoint - .01rem) {
+    @media(max-width: $desktop-breakpoint) {
         display: none;
     }
 }

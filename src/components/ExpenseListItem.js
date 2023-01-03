@@ -34,7 +34,8 @@ export const ExpenseListItem = ({ id, description, amount, createdAt }) => (
         </div>
         <h3 className="list-item__data">
             <p>{numeral(amount / 100).format('0,0.00 $')}</p>
-            <p>~ {numeral((amount / 100) / 4.30).format('0,0.00')} €.</p>
+            <p> {numeral((amount / 100) / 4.67).format('0,0.00')} €</p>
+            <p> {numeral((amount / 100) / 4.38).format('0,0.00')} $</p>
         </h3> 
     </Link>
 ); 

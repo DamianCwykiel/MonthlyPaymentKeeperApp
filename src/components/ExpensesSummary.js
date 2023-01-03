@@ -8,13 +8,15 @@ import selectExpensesTotal from '../selectors/expenses-total';
 export const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
     const expensesPhrase = expenseCount === 1 ? 'payment' : 'payments';
     const formattedExpensesTotal = numeral(expensesTotal / 100).format('0,0.00 $');
-    const formattedExpenseTotalEuroCurrency = numeral ((expensesTotal / 100) / 4.29).format('0,0.00');
+    const formattedExpenseTotalEuroCurrency = numeral ((expensesTotal / 100) / 4.67).format('0,0.00');
+    const formattedExpenseTotalUSDCurrency = numeral ((expensesTotal / 100) / 4.38).format('0,0.00');
     return (
         <div className="page-header">
             <div className="content-container">
                 <h2 className="page-header__title">
-                    Check your bills! There are: <span>{expenseCount}</span> {expensesPhrase}. In total that is: <span>{formattedExpensesTotal}</span>.
-                    That equals ~ <span>{formattedExpenseTotalEuroCurrency} €</span>.
+                    Check your bills! There are: <span>{expenseCount}</span> {expensesPhrase}. In total: <span>{formattedExpensesTotal}</span>.
+                    That's ~ <span>{formattedExpenseTotalEuroCurrency} EUR / </span>
+                    <span>{formattedExpenseTotalUSDCurrency} USD</span>.
                     <div className="page-header__actions">
                         <Link className="create-button" to="/create">Add Your Bill</Link>
                     </div>

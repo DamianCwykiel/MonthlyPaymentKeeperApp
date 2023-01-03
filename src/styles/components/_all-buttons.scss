@@ -3,7 +3,7 @@
     border: 2px solid $blue;
     border-radius: 5%;
     color: $black;
-    display: inline-block;
+    display: block;
     font-size: $font-size-large; 
     font-weight: 800;
     height: 8rem;
@@ -14,6 +14,17 @@
     transition: background .3s $royalblue;
     &:hover{
         background: $royalblue;
+    }
+}
+
+.login-button_fb {
+    @extend .login-button;
+    background: $skyblue;
+    display: block;
+    color: $white;
+    transition: background .3s $royalblue; 
+    &:hover{
+        background: $royalblue; 
     }
 }
 
