@@ -6,7 +6,7 @@ export const ExpenseLoginPage = ({ startLogin, startLoginFb }) => (
 <div className="box-layout">
     <div className ="box-layout__box">
         <h1 className="box-layout__title">Monthly$Payments€Keeper£App</h1>
-        <p className="box-layout__subtitle">Use gmail account to log in to this application</p>
+        <p className="box-layout__subtitle">Use your account to sign in to this application</p>
         <button className="login-button" onClick={startLogin}>Google</button>
         <button className="login-button__fb" onClick={startLoginFb}>Facebook</button>
     </div>
