@@ -44,7 +44,7 @@
     text-decoration: none;
     width: 20rem;
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
     @media(min-width: $desktop-breakpoint) {
         width: 15rem;

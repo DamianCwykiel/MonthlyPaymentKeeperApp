@@ -2,8 +2,8 @@
     background: $blue;
     border: 2px solid $blue;
     border-radius: 5%;
-    color: $black;
-    display: block;
+    color: $white;
+    display: inline-block;
     font-size: $font-size-large; 
     font-weight: 800;
     height: 8rem;
@@ -17,15 +17,9 @@
     }
 }
 
-.login-button_fb {
+.login-button__fb {
     @extend .login-button;
-    background: $skyblue;
-    display: block;
     color: $white;
-    transition: background .3s $royalblue; 
-    &:hover{
-        background: $royalblue; 
-    }
 }
 
 .create-button {
@@ -45,7 +39,7 @@
     background: none;
 }
 
-.save-button{
+.save-button {
     @extend .login-button;
     background: $l-green;
     border: 2px solid $d-green;

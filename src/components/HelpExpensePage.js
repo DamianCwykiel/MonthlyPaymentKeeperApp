@@ -6,7 +6,7 @@ export const HelpExpensePage = () => (
         <header className="header">
             <div className="content-container">
                 <div className="header__content">
-                    <Link className="header__title" to="/">HomePage</Link>
+                    <h3><Link className="header__title" to="/">HomePage</Link></h3>
                 </div>
                 <div className="navlink-content">
                     <h3 className="header__about-app">AboutApp</h3>
