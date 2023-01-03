@@ -17,7 +17,7 @@ export const HelpExpensePage = () => (
             <div className="content-container">
                <article className="list-item__message">
                     Monthly$Payments€Keeper£App was created as one of projects during WebDeveloper course.<br/>
-                    This project uses including: React, Redux, .SCSS, Firebase, Webpack and was been tested in Jest.<br/>
+                    This project uses: React, Redux, .SCSS, Firebase, Webpack and was been tested in Jest.<br/>
                     The app styled as a home budget-app allows to add, change or remove created expenses. <br/>
                     The database was placed in the Firebase and an access to it is via google or fb account login.<br/>
                     In the app an amount in total you can see above of item's list in the header.<br/>
